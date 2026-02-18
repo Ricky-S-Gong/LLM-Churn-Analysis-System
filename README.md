@@ -15,8 +15,7 @@ This project is adapted from an LLM churn analysis system Ricky built during an 
 - **QLoRA Fine-Tuning** -- Teacher-student distillation (Qwen2.5-14B -> Qwen2.5-7B) using PEFT + TRL
 - **Improved Pipeline** -- Post-processing for citation validation + deterministic risk scoring
 - **Structured Output** -- JSON with summary, top reasons, risk level, actions, and citations
-- **Academic Paper** -- Full NeurIPS-style LaTeX paper (`paper.tex`) with mathematical formulations
-- **Zero Cost** -- Runs entirely on Google Colab free tier (T4/A100 GPU)
+- **Zero Cost** -- Runs entirely on Google Colab free tier (T4 GPU). Upgrading to Colab Pro (A100/H100) is recommended for significantly faster training data generation and inference
 
 ---
 
@@ -112,7 +111,7 @@ pip install -r requirements.txt
 1. Open [Google Colab](https://colab.research.google.com/)
 2. Upload `notebooks/LLM-Churn-RAG-Finetuning-EN.ipynb` (or the Chinese version `notebooks/LLM-Churn-RAG-Fintuning.ipynb`)
 3. Set runtime to **T4 GPU**: Runtime -> Change runtime type -> T4 GPU
-4. Upload `data/telco_churn_with_all_feedback.csv` to Colab (or mount Google Drive)
+4. Upload `data/telco_churn_with_all_feedback.csv` to Google Drive and mount it in Colab (recommended), or upload directly to the Colab runtime
 5. Run cells sequentially from Phase 1
 
 ### Run the Final Demo

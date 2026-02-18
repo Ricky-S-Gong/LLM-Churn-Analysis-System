@@ -15,8 +15,7 @@
 - **QLoRA 微调** -- 教师-学生蒸馏（Qwen2.5-14B -> Qwen2.5-7B），使用 PEFT + TRL
 - **改进管线** -- 引用后处理验证 + 确定性风险评分，无需重新训练
 - **结构化输出** -- JSON 格式，包含摘要、主要原因、风险等级、行动建议和引用
-- **学术论文** -- 完整的 NeurIPS 风格 LaTeX 论文（`paper.tex`），含数学公式推导
-- **零成本** -- 完全在 Google Colab 免费额度上运行（T4/A100 GPU）
+- **零成本** -- 完全在 Google Colab 免费额度上运行（T4 GPU）。建议开通 Colab Pro（A100/H100），可大幅加速训练数据生成和推理过程
 
 ---
 
@@ -112,7 +111,7 @@ pip install -r requirements.txt
 1. 打开 [Google Colab](https://colab.research.google.com/)
 2. 上传 `notebooks/LLM-Churn-RAG-Fintuning.ipynb`（中文版）或 `notebooks/LLM-Churn-RAG-Finetuning-EN.ipynb`（英文版）
 3. 设置运行时为 **T4 GPU**：运行时 -> 更改运行时类型 -> T4 GPU
-4. 上传 `data/telco_churn_with_all_feedback.csv` 到 Colab（或挂载 Google Drive）
+4. 将 `data/telco_churn_with_all_feedback.csv` 上传至 Google Drive 并在 Colab 中挂载（推荐），或直接上传至 Colab 运行时
 5. 从 Phase 1 开始依次运行
 
 ### 运行 Final Demo
