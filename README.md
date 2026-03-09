@@ -4,7 +4,7 @@ An end-to-end **RAG + QLoRA fine-tuning** system for telecom customer churn anal
 
 Given a natural-language query (e.g. *"Why are fiber optic customers churning?"*), the system retrieves relevant customer feedback, generates root-cause analysis, assesses churn risk, and returns actionable recommendations with citations -- all in structured JSON.
 
-This project is adapted from an LLM churn analysis system Ricky built during an Eth Tech internship. Because enterprise data cannot be shared due to compliance constraints, we use a similar Kaggle dataset for a simplified reproduction. The project uses fully open-source Qwen models, enabling reproducible, zero-cost execution.
+This project is a lightweight adaptation of an LLM churn analysis system Ricky built from his industry experience. Because enterprise data cannot be shared due to compliance constraints, we use a similar Kaggle dataset for a simplified reproduction. The project uses fully open-source Qwen models, enabling reproducible, zero-cost execution.
 
 ---
 
